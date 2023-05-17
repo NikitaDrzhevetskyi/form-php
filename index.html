@@ -1,0 +1,80 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>phpEmail</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rizalcss@2.1.0/css/cdn.rizal.css" integrity="sha256-pqCXaySV+OMUcpVQ0FeFtvz9VLMeI08z53Ar2a7QP5o=" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script defer src="https://kit.fontawesome.com/1e8d61f212.js"></script>
+        <style>
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+           <form class="display_grid" action="email.php" method="POST">
+               <label for="name">Ваше ім'я:</label>
+               <input class= "h_3_rem w_25_rem margin_bottom_1_rem" type="text" id="name" name="name">
+
+               <label for="email">Email:</label>
+               <input class= "h_3_rem w_25_rem margin_bottom_1_rem" type="email" id="email" name="email">
+
+               <label for="phone">Номер телефону</label>
+               <input class= "h_3_rem w_25_rem margin_bottom_1_rem" id="phone" name="phone">
+
+               <label for="company">Назва компанії</label>
+               <input class= "h_3_rem w_25_rem margin_bottom_1_rem" type="text" id="company" name="company">
+
+               <label for="about_company">Про компанію</label>
+               <input class= "h_3_rem w_25_rem margin_bottom_1_rem" id="about_company" name="about_company">
+
+               <label for="target_audience">Цільова аудиторія:</label>
+               <input class= "h_3_rem w_25_rem margin_bottom_1_rem"  id="target_audience" name="target_audience">
+
+               <label for = "main_targets">Які основні цілі та завдання ви ставите перед вашим сайтом?</label>
+               <textarea class="h_3_rem w_25_rem margin_bottom_1_rem" id = main_targets name = "main_targets" rows="5"></textarea>
+
+               <label for="structures_ideas">Ідеї, рекомендації, побажання щодо структури:</label>
+               <textarea class= "h_5_rem w_25_rem margin_bottom_1_rem" id="structures_ideas" name="structures_ideas" rows="5"></textarea>
+
+               <label for="main_ideas">Які основні функції ви б хотіли, щоб ваш сайт виконував?</label>
+               <textarea class= "h_5_rem w_25_rem margin_bottom_1_rem" id="main_ideas" name="main_ideas" rows="5"></textarea>
+
+
+               <label for="keywords">Ключові слова:</label>
+               <input class= "h_3_rem w_25_rem margin_bottom_1_rem" type="text" id="keywords" name="keywords">
+
+                   <label for="preferred_colors">Бажані кольори:</label>
+               <input class= "h_3_rem w_25_rem margin_bottom_1_rem" type="text" id="preferred_colors" name="preferred_colors">
+
+
+               <label for="project_duration">Термін здачі проекту (місяці):</label>
+               <input class= "h_3_rem w_25_rem margin_bottom_1_rem" type="text" id="project_duration" name="project_duration">
+
+               <label for="website_budget">Бюджет на розробку сайту ($):</label>
+               <input class= "h_3_rem w_25_rem margin_bottom_1_rem" type="text" id="website_budget" name="website_budget">
+
+               <label for="promotion_budget">Бюджет на просування сайту ($):</label>
+               <input class= "h_3_rem w_25_rem margin_bottom_1_rem" type="text" id="promotion_budget" name="promotion_budget">
+
+               <div class="primary-checkbox-container margin_bottom_1_rem">
+                   <input class="primary-checkbox" type="checkbox">
+                   <div class="primary-checkbox-description color_black font_size_small">Я згоден з<a class="font_size_small color_primary" href="https://rizalcss.com/privacy-policy" target="_blank">  Політикою конфіденційності</a>.</div>
+               </div>
+
+               <button type = "submit" name="send" class="primary-button background_color_primary font_size_medium color_white border_radius_secondary">
+                   Відправити <i class="fa-solid fa-paper-plane primary-button-icon color_white"></i>
+               </button>
+           </form>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/rizalcss@2.1.0/js/components.min.js" integrity="sha256-3UCSBV90gv8A+IA1iZst64qLbw7u9y2Y6JbfRa21tKw=" crossorigin="anonymous"></script>
+    </body>
+    </html>
